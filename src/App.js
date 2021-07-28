@@ -14,12 +14,12 @@ const App = () => {
 
   const [dataList] = useCustomHooks();
 
-  /*const fetchDetailsFromServer = () => {
+  const fetchDetailsFromServer = () => {
     axios
       .get("https://reactnative.dev/movies.json")
       .then((response) => {
         console.log(response.data);
-        setDataList(response.data.movies);
+        // setDataList(response.data.movies);
       })
       .catch((error) => {
         console.log(error);
@@ -30,8 +30,8 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchDetailsFromServer();
-  }, []);*/
+    //fetchDetailsFromServer();
+  }, []);
 
   return (
     <View style={styles.app}>
